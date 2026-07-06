@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Our Story ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: Poppins, sans-serif;
+      }
+
+      body {
+        background: #090909;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      /* Animated Background */
+
+      body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(-45deg, #111, #2d1b2e, #4b1d3f, #111);
+        background-size: 400% 400%;
+        animation: bg 15s infinite;
+        z-index: -2;
+      }
+
+      @keyframes bg {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      /* Navbar */
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+      }
+
+      nav h2 {
+        font-family: Great Vibes;
+        font-size: 40px;
+        color: #ff6b81;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+      }
+
+      nav a:hover {
+        color: #ff6b81;
+      }
+
+      /* Hero */
+
+      .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .hero h1 {
+        font-family: Great Vibes;
+        font-size: 90px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 22px;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.8;
+      }
+
+      button {
+        margin-top: 40px;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 50px;
+        background: #ff4d6d;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px #ff4d6d;
+      }
+
+      /* Sections */
+
+      section {
+        padding: 100px 10%;
+      }
+
+      .title {
+        font-size: 60px;
+        font-family: Great Vibes;
+        text-align: center;
+        margin-bottom: 60px;
+        color: #ff8fa3;
+      }
+
+      .story {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        transition: 0.4s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card h3 {
+        margin-bottom: 20px;
+        color: #ff8fa3;
+      }
+
+      /* Gallery */
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: 0.5s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      .letter {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 40px;
+        border-radius: 20px;
+        line-height: 2;
+        font-size: 18px;
+      }
+
+      .shayari {
+        font-size: 24px;
+        text-align: center;
+        line-height: 2;
+        font-style: italic;
+      }
+
+      footer {
+        padding: 50px;
+        text-align: center;
+        color: #aaa;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 55px;
+        }
+
+        .title {
+          font-size: 45px;
+        }
+
+        nav {
+          padding: 15px 20px;
+        }
+
+        nav ul {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h2>Our Story ❤️</h2>
+
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#letter">Letter</a></li>
+        <li><a href="#shayari">Shayari</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <h1>Dear Gauri ❤️</h1>
+
+        <p>
+          Some memories never fade.
+         Some people never leave our hearts.
+        This website is dedicated to you, Gauri.
+        Thank you for being the most beautiful chapter of my school life.
+                    </p>
+
+        <a href="#story">
+          <button>Our Journey ❤️</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="story">
+      <h2 class="title">Our Story</h2>
+
+      <div class="story">
+        <div class="card">
+          <h3>📚 7th Standard</h3>
+
+          <p>
+            This was the beginning of everything. We were just kids. We didn't
+            know what love truly meant, but somehow our hearts understood each
+            other.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🌸 Beautiful Days</h3>
+
+          <p>
+            Every smile, every conversation, every little moment became a memory
+            I still carry today.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💔 We Got Separated</h3>
+
+          <p>
+            Life had different plans. Without saying goodbye, our paths slowly
+            became different.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>❤️ Today</h3>
+
+          <p>
+            Maybe time changed everything. But my respect, care, and memories
+            never changed.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+  <h2 class="title">Our Memories 📸</h2>
+
+  <div class="gallery">
+    <div class="photo">
+      <img src="images/photo1.jpeg" />
+      <p>Our first beautiful memory ❤️</p>
+    </div>
+
+    <div class="photo">
+      <img src="images/photo2.jpeg" />
+      <p>Your smile was always my favorite.</p>
+    </div>
+
+    <div class="photo">
+      <img src="images/photo3.jpeg" />
+      <p>Every picture tells a story.</p>
+    </div>
+
+    <div class="photo">
+      <img src="images/photo4.jpeg" />
+      <p>my current favorite memory.</p>
+    </div>
+
+    <div class="photo">
+      <img src="images/photo5.jpeg" />
+      <p>A memory that still makes me smile.</p>
+    </div>
+
+    <div class="photo">
+      <img src="images/photo6.jpeg" />
+      <p>Thank you for these memories, Gauri..</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOVE LETTER ================= -->
+
+<section id="letter">
+  <h2 class="title">A Letter From My Heart 💌</h2>
+
+  <div class="letter">
+    <p>Dear Gauri ❤️,</p>
+
+    <br />
+
+    <p>
+      I don't know whether you still remember our school days. Maybe they were
+      just small memories for you, but for me... they became one of the most
+      beautiful chapters of my life.
+    </p>
+
+    <br />
+
+    <p>
+      Back then we were just kids. We didn't understand what love really meant.
+      Still... my heart somehow knew that you were special.
+    </p>
+
+    <br />
+
+    <p>
+      Time changed. Life changed. We got separated. But memories never left.
+    </p>
+
+    <br />
+
+    <p>
+      Today I don't expect anything from you. I only wanted to tell you... Thank
+      you. Thank you for every smile, every conversation, every memory.
+    </p>
+
+    <br />
+
+    <p>
+      No matter where life takes us, I truly wish you happiness. Because seeing
+      you happy will always make me smile.
+    </p>
+
+    <br />
+
+    <h3 style="text-align: center; color: #ff8fa3">Forever Grateful ❤️</h3>
+  </div>
+</section>
+
+<!-- ================= SHAYARI ================= -->
+
+<section id="shayari">
+  <h2 class="title">Some Words For You 🌹</h2>
+
+  <div class="shayari">
+    <p>
+
+Duniya ko khushi chahiye,<br>
+Aur mujhe har khushi mein tum... ❤️<br><br>
+
+Mere doston ko waqt chahiye,<br>
+Aur mujhe har waqt tum... ❤️<br><br>
+
+Pyase ko kuaa chahiye,<br>
+Aur mujhe har dua mein tum... ❤️<br><br>
+
+Aur agar kabhi meri zindagi mein koi humsafar aaye,<br>
+Toh meri dua hai... woh tum hi ho. ❤️
+
+</p>
+
+    <br /><br />
+
+   <p>
+
+लिखूं... तो लफ़्ज़ तुम हो,<br>
+सोचूं... तो ख़याल तुम हो,<br>
+मांगूं... तो दुआ तुम हो,<br>
+सच कहूं... तो मोहब्बत तुम हो! ❤️
+
+</p>
+
+    <br /><br />
+<p>
+“तिला ना आज मी प्रपोज केलं,<br>
+तर तिने विचारलं — जगात हजारो मुली असताना तू मलाच का प्रपोज केलं?”<br><br>
+
+मी हसून सांगितलं —<br>
+“आकाशात लाखो चांदण्या असतात,<br>
+पण आपलं लक्ष नेहमी फक्त चंद्रावरच असतं…” ❤️
+</p>
+  </div>
+</section>
+
+<!-- ================= TIMER ================= -->
+
+<section>
+  <h2 class="title">How Long These Memories Have Stayed ❤️</h2>
+
+  <h1 id="timer" style="text-align: center; font-size: 60px; color: #ff8fa3">
+    00 Days
+  </h1>
+</section>
+
+<!-- ================= FINAL ================= -->
+
+<section>
+
+<h2 class="title">
+One Last Thing...
+</h2>
+
+<div class="letter">
+
+<h2 style="text-align:center;font-family:'Great Vibes',cursive;color:#ff8fa3;">
+Thank You, Gauri ❤️
+</h2>
+
+<br>
+
+<p style="text-align:center;font-size:22px;line-height:2;">
+
+Some people are not meant to stay forever,
+
+but they leave memories that stay forever.
+
+<br><br>
+
+Thank you, Gauri,
+
+for being one of the most beautiful memories of my life.
+
+❤️
+
+</p>
+
+<br>
+
+<p style="text-align:center;font-style:italic;color:#ffb6c1;">
+
+"No matter where life takes us,
+
+I'll always smile when I remember our story."
+
+</p>
+
+</div>
+
+</section>
+
+<footer>Made with ❤️ by Pratik</footer>
+<script>
+
+/* ==============================
+        LOVE TIMER
+============================== */
+
+const startDate = new Date("2018-06-15 00:00:00"); // Change this date
+
+function updateTimer(){
+
+const now = new Date();
+
+const diff = now - startDate;
+
+const days = Math.floor(diff / (1000*60*60*24));
+
+const hours = Math.floor((diff/(1000*60*60))%24);
+
+const minutes = Math.floor((diff/(1000*60))%60);
+
+const seconds = Math.floor((diff/1000)%60);
+
+document.getElementById("timer").innerHTML=
+
+days+" Days ❤️ "+hours+" Hours "+minutes+" Minutes "+seconds+" Seconds";
+
+}
+
+setInterval(updateTimer,1000);
+
+updateTimer();
+
+
+/* ==============================
+        FLOATING HEARTS
+============================== */
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.innerHTML="❤️";
+
+heart.style.position="fixed";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.top="100vh";
+
+heart.style.fontSize=(20+Math.random()*20)+"px";
+
+heart.style.pointerEvents="none";
+
+heart.style.zIndex="999";
+
+heart.style.transition="all 6s linear";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.style.transform="translateY(-120vh) rotate(360deg)";
+
+heart.style.opacity="0";
+
+},100);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},6000);
+
+}
+
+setInterval(createHeart,700);
+
+
+/* ==============================
+        SCROLL ANIMATION
+============================== */
+
+const cards=document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+cards.forEach(card=>{
+
+const top=card.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+card.style.opacity="1";
+
+card.style.transform="translateY(0px)";
+
+}
+
+});
+
+});
+
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(80px)";
+
+card.style.transition="1s";
+
+});
+
+
+/* ==============================
+      TYPEWRITER EFFECT
+============================== */
+
+const heroTitle=document.querySelector(".hero h1");
+
+const originalText=heroTitle.innerHTML;
+
+heroTitle.innerHTML="";
+
+let i=0;
+
+function type(){
+
+if(i<originalText.length){
+
+heroTitle.innerHTML+=originalText.charAt(i);
+
+i++;
+
+setTimeout(type,70);
+
+}
+
+}
+
+type();
+
+
+/* ==============================
+       IMAGE HOVER EFFECT
+============================== */
+
+document.querySelectorAll(".gallery img").forEach(img=>{
+
+img.addEventListener("mouseover",()=>{
+
+img.style.boxShadow="0 0 30px hotpink";
+
+});
+
+img.addEventListener("mouseout",()=>{
+
+img.style.boxShadow="none";
+
+});
+
+});
+
+
+/* ==============================
+       BUTTON GLOW
+============================== */
+
+document.querySelectorAll("button").forEach(btn=>{
+
+btn.addEventListener("mouseenter",()=>{
+
+btn.style.boxShadow="0 0 30px #ff4d6d";
+
+});
+
+btn.addEventListener("mouseleave",()=>{
+
+btn.style.boxShadow="none";
+
+});
+
+});
+
+
+/* ==============================
+       MUSIC PLAYER
+============================== */
+
+const music=new Audio("music/love.mp3");
+
+music.loop=true;
+
+function playMusic(){
+
+music.play();
+
+}
+
+</script>
+
+</body>
+
+</html>
+<div style="margin-top:30px;">
+
+<a href="#story">
+
+<button>Our Journey ❤️</button>
+
+</a>
+
+<button onclick="playMusic()">
+
+🎵 Play Music
+
+</button>
+
+</div>
+<h3 style="
+font-size:28px;
+font-family:'Great Vibes',cursive;
+color:#ff8fa3;
+margin-top:10px;
+">
+
+For Gauri ❤️
+
+</h3>
